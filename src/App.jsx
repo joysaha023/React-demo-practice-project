@@ -4,15 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const purple = "#8e44ad";
+  const [bg, setBg] = useState(purple)
 
   const bgChange = () => {
-    console.log('clicked')
+    // console.log('clicked')
+    let newBg = '#34495e'
+    setBg(newBg)
   }
 
   return (
     <>
-      <div>
+      <div style={ {backgroundColor: bg}}>
         <button onClick={bgChange}>Button</button>
       </div>
       
