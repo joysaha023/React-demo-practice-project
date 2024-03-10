@@ -6,9 +6,15 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const bgChange = () => {
+    console.log('clicked')
+  }
+
   return (
     <>
-      <li>hello</li>
+      <div>
+        <button onClick={bgChange}>Button</button>
+      </div>
       
       
      
